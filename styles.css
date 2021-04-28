@@ -1,0 +1,88 @@
+.container{
+	max-width:900px;
+	margin:0 auto;
+	background-color:black;
+	padding:20px;
+}
+h2,label,h1{
+	color:white;
+}
+h3{
+	color:white;
+	text-align:center;
+}
+h4{
+	color:grey;
+}
+
+form{
+
+	max-width:200px;
+	margin:0 auto;
+	padding: 20px;
+
+}
+input[type=submit]{
+	width:80px;
+	background-color:orange;
+	padding:10px;
+	border:none;
+
+}
+input[type=text],input[type=email],textarea{
+	padding: 5px;
+	outline:none;
+}
+.input-field{
+	padding: 10px;
+}
+.input-field span{
+	color:grey;
+	text-align:right;
+	font-size:12px;
+	}
+.comments{
+	color:gold;
+	max-width:600px;
+	min-height:400px;
+	margin:0 auto;
+	padding: 20px;
+	
+
+}
+button{
+	background-color:orange;
+	padding:10px;
+	border:none;
+}
+a{
+	text-decoration:none;
+	color:teal;
+}
+.errors {
+	color:red;
+	margin-left:8px;
+}
+ul li a{
+	display: inline-block;
+
+}
+.edit{
+	background-color:teal;
+	
+}
+.edit a{
+	color: white;
+}
+.delete{
+	background-color:#DC2293FF;
+}
+.delete a{
+	color:white;
+}
+
+footer div{
+	color:gray;
+	text-align:center;
+}
+
