@@ -22,11 +22,7 @@ form{
 	padding: 20px;
 
 }
-input[type=submit]{
-	width:80px;
-	background-color:orange;
-	padding:10px;
-	border:none;
+
 
 }
 input[type=text],input[type=email],textarea{
@@ -50,11 +46,7 @@ input[type=text],input[type=email],textarea{
 	
 
 }
-button{
-	background-color:orange;
-	padding:10px;
-	border:none;
-}
+
 a{
 	text-decoration:none;
 	color:teal;
