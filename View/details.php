@@ -1,22 +1,22 @@
 <?php
 include_once('../Model/connection.php');
 if (isset($_POST['delete'])) {
-	$delete_comment = mysqli_real_escape_string($conn, $_POST['delete_comment']);
-	$delete = "DELETE FROM user_details WHERE id = $delete_comment";
-	if (mysqli_query($conn, $delete)) {
-		header('Location:../index.php');
-	} else {
-		echo "could not delete the comment" . mysqli_error($conn);
-	}
+    $delete_comment = mysqli_real_escape_string($conn, $_POST['delete_comment']);
+    $delete = "DELETE FROM user_details WHERE id = $delete_comment";
+    if (mysqli_query($conn, $delete)) {
+        header('Location:../index.php');
+    } else {
+        echo "could not delete the comment" . mysqli_error($conn);
+    }
 }
 
 if (isset($_GET['id'])) {
-	$id = mysqli_real_escape_string($conn, $_GET['id']);
-	$select = " SELECT * FROM user_details WHERE id = $id";
-	$result = mysqli_query($conn, $select);
-	$comment = mysqli_fetch_assoc($result);
-	mysqli_free_result($result);
-	mysqli_close($conn);
+    $id = mysqli_real_escape_string($conn, $_GET['id']);
+    $select = " SELECT * FROM user_details WHERE id = $id";
+    $result = mysqli_query($conn, $select);
+    $comment = mysqli_fetch_assoc($result);
+    mysqli_free_result($result);
+    mysqli_close($conn);
 }
 ?>
 
@@ -25,7 +25,7 @@ if (isset($_GET['id'])) {
 
 <div class="container">
 
-	
+
 
     <div class="comments">
 
@@ -56,11 +56,8 @@ if (isset($_GET['id'])) {
         <?php else : ?>
         <h4> <?php echo "comment does not exist :-("; ?> </h4>
         <?php endif; ?>
-        <div> <a href="index.php">
+        <div> <a href="../index.php">
                 <<< Home</a>
         </div>
     </div> <?php include('../Html/footer.php'); ?>
 </div>
-
-
-
